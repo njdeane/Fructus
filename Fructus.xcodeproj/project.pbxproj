@@ -13,6 +13,7 @@
 		A68B199326F1D3130040FCE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68B199226F1D3130040FCE2 /* Preview Assets.xcassets */; };
 		A6A367F426F1DC89001A628D /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A367F326F1DC89001A628D /* FruitCardView.swift */; };
 		A6FB354F26F1E43A00B0A788 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB354E26F1E43A00B0A788 /* StartButtonView.swift */; };
+		A6FB355126F1E81300B0A788 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB355026F1E81300B0A788 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A68B199426F1D3130040FCE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6A367F326F1DC89001A628D /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 		A6FB354E26F1E43A00B0A788 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		A6FB355026F1E81300B0A788 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				A68B198B26F1D3110040FCE2 /* FructusApp.swift */,
 				A68B198D26F1D3110040FCE2 /* ContentView.swift */,
+				A6FB355026F1E81300B0A788 /* OnboardingView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				A6A367F426F1DC89001A628D /* FruitCardView.swift in Sources */,
 				A6FB354F26F1E43A00B0A788 /* StartButtonView.swift in Sources */,
 				A68B198E26F1D3110040FCE2 /* ContentView.swift in Sources */,
+				A6FB355126F1E81300B0A788 /* OnboardingView.swift in Sources */,
 				A68B198C26F1D3110040FCE2 /* FructusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
