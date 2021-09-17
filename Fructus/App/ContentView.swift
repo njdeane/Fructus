@@ -16,10 +16,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(fruits) { item in
+                ForEach(fruits.shuffled()) { item in  // The .shuffled modifier just shuffles the order so its not always the same.
                     FruitRowView(fruit: item)
+                        .padding(.vertical, 4)
                 }
             }
+            .navigationTitle("Fruits") // This appears as a title but upon scroll it enters the navigation bar as a classic title.
         } //: NAVIGTION
     }
 }
