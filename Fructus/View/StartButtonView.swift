@@ -27,7 +27,7 @@ struct StartButtonView: View {
             .background(
                 Capsule().strokeBorder(Color.white, lineWidth: 1.25)
             )
-        } // BUTTON
+        } //: BUTTON
         .accentColor(Color.white)
     }
 }

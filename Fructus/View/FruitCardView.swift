@@ -40,8 +40,8 @@ struct FruitCardView: View {
                     .frame(maxWidth: 480)
                 //BUTTON START
                 StartButtonView()
-            } // VSTACK
-        } // ZSTACK
+            } //: VSTACK
+        } //: ZSTACK
         .onAppear {
             withAnimation(.easeOut(duration: 0.5)) {
                 isAnimating = true
