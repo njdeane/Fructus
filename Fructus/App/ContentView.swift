@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    //MARK: - PROPERTIES
+    var fruits: [Fruit] = fruitsData
+
+    //MARK: - BODY
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(fruits) { item in
+                    FruitRowView(fruit: item)
+                }
+            }
+        } //: NAVIGTION
     }
 }
 
+//MARK: - PREVIEW
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(fruits: fruitsData)
     }
 }
