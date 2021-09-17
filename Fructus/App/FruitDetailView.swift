@@ -18,7 +18,7 @@ struct FruitDetailView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .center, spacing: 20) {
                     // HEADER
-                    
+                    FruitHeaderView(fruit: fruit)
                     
                     VStack(alignment: .leading, spacing: 20) {
                         // TITLE
@@ -33,6 +33,7 @@ struct FruitDetailView: View {
                             .multilineTextAlignment(.leading)
                         
                         // NUTRIENTS
+                        FruitNutrientView(fruit: fruit)
                         
                         // SUBHEADING
                         Text("Learn more about \(fruit.title)".uppercased())
@@ -44,12 +45,17 @@ struct FruitDetailView: View {
                             .multilineTextAlignment(.leading)
                         
                         // LINK
-                        
+                        SourceLinkView()
+                            .padding(.top, 10)
+                            .padding(.bottom, 40)
                     } //: VSTACK
                     .padding(.horizontal, 20)
                     .frame(maxWidth: 640, alignment: .center) // won't make a difference on iPhone but will on iPad
                 } //: VSTACK
+                .navigationBarTitle(fruit.title, displayMode: .inline) // .inline puts the title in the navbar rather than underneath.
+                    .navigationBarHidden(true) // this line hides the navBar.
             } //: SCROLL
+            .edgesIgnoringSafeArea(.top) // this line extends the imageView to the top of the superview (not safe area).
         } //: NAVIGATION
     }
 }
