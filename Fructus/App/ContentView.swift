@@ -10,8 +10,11 @@ import SwiftUI
 struct ContentView: View {
     
     //MARK: - PROPERTIES
+    
+    @State private var isShowingSettings: Bool = false
+    
     var fruits: [Fruit] = fruitsData
-
+    
     //MARK: - BODY
     var body: some View {
         NavigationView {
@@ -24,7 +27,18 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Fruits") // This appears as a title but upon scroll it enters the navigation bar as a classic title.
-        } //: NAVIGTION
+            .navigationBarItems(
+                trailing:
+                    Button(action: {
+                        isShowingSettings = true
+                    }) {
+                        Image(systemName: "slider.horizontal.3")
+                    }
+                    .sheet(isPresented: $isShowingSettings) {
+                        SettingsView()
+                    }
+            )
+        }
     }
 }
 
