@@ -13,7 +13,7 @@ struct SettingsRowView: View {
       HStack {
         Text("Developer").foregroundColor(Color.gray)
         Spacer()
-        Text("Pirate Apps Inc")
+        Text("Pirate Apps Ltd")
       }
     }
   
