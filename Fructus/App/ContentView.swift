@@ -39,6 +39,7 @@ struct ContentView: View {
           }
       )
     }
+    .navigationViewStyle(StackNavigationViewStyle()) // This changes the navigation style to be the same as iPhone for iPad (not nice)
   }
 }
 

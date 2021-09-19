@@ -57,6 +57,7 @@ struct FruitDetailView: View {
       } //: SCROLL
       .edgesIgnoringSafeArea(.top) // this line extends the imageView to the top of the superview (not safe area).
     } //: NAVIGATION
+    .navigationViewStyle(StackNavigationViewStyle()) // This changes the navigation style to be the same as iPhone for iPad (not nice)
   }
 }
 
