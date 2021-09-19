@@ -13,10 +13,9 @@ struct SettingsRowView: View {
       HStack {
         Text("Developer").foregroundColor(Color.gray)
         Spacer()
-        Text("Pirate Apps Ltd")
+        Text("Pirate Apps Inc")
       }
     }
-  
 }
 
 struct SettingsRowView_Previews: PreviewProvider {
