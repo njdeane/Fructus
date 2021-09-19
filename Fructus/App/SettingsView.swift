@@ -39,14 +39,12 @@ struct SettingsView: View {
           // Section 3
           GroupBox(
             label: SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
-          ) {
-            Divider().padding(.vertical, 4)
-            
-            HStack {
-              Text("Developer").foregroundColor(Color.gray)
-              Spacer()
-              Text("Pirate Apps Inc")
-            }
+          ) {            
+            SettingsRowView(name: "Developer", content: "Pirate Apps Inc")
+            SettingsRowView(name: "Designer", content: "Nic Deane")
+            SettingsRowView(name: "Compatibility", content: "iOS 14.1+")
+            SettingsRowView(name: "Website", linkLabel: "ArtStage App", linkDestination: "artstageapp.com")
+            SettingsRowView(name: "App Version", content: "2.0")
           }
         }
         .navigationBarTitle(Text("Settings"), displayMode: .large)
