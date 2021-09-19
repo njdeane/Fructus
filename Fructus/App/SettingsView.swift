@@ -48,8 +48,21 @@ struct SettingsView: View {
               .multilineTextAlignment(.leading)
             
             Toggle(isOn: $isOnboarding) { // The $ makes it a 'binding property' so each time user toggles it updates the app storage (prior user defaults). each toggle will either change property of isOnboarding to true or false.. fucking amazing!
-              Text("Restart".uppercased())
+              if isOnboarding {
+                Text("Restarted".uppercased())
+                  .fontWeight(.bold)
+                  .foregroundColor(.green)
+              } else {
+                Text("Restart".uppercased())
+                  .fontWeight(.bold)
+                  .foregroundColor(.secondary)              
+              }
             }
+            .padding()
+            .background(
+              Color(UIColor.tertiarySystemBackground)
+                .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+            )
           }
           
           // Section 3
