@@ -36,10 +36,11 @@ struct SettingsView: View {
           }
           // Section 2
           
+          
           // Section 3
           GroupBox(
             label: SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
-          ) {            
+          ) {
             SettingsRowView(name: "Developer", content: "Pirate Apps Inc")
             SettingsRowView(name: "Designer", content: "Nic Deane")
             SettingsRowView(name: "Compatibility", content: "iOS 14.1+")
@@ -68,3 +69,4 @@ struct SettingsView_Previews: PreviewProvider {
       .preferredColorScheme(.dark)
   }
 }
+
