@@ -18,6 +18,7 @@
 		A68B199326F1D3130040FCE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68B199226F1D3130040FCE2 /* Preview Assets.xcassets */; };
 		A69BF5AA26F4861D00145742 /* FruitNutrientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69BF5A926F4861D00145742 /* FruitNutrientView.swift */; };
 		A6A367F426F1DC89001A628D /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A367F326F1DC89001A628D /* FruitCardView.swift */; };
+		A6B5D21426F59B46007C35D0 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B5D21326F59B46007C35D0 /* SettingsRowView.swift */; };
 		A6ED08B326F4492600782AEA /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ED08B226F4492600782AEA /* FruitModel.swift */; };
 		A6ED08B626F44A2B00782AEA /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ED08B526F44A2B00782AEA /* FruitData.swift */; };
 		A6ED08B826F469BC00782AEA /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ED08B726F469BC00782AEA /* FruitRowView.swift */; };
@@ -39,6 +40,7 @@
 		A68B199426F1D3130040FCE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69BF5A926F4861D00145742 /* FruitNutrientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientView.swift; sourceTree = "<group>"; };
 		A6A367F326F1DC89001A628D /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		A6B5D21326F59B46007C35D0 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsRowView.swift; path = Fructus/App/SettingsRowView.swift; sourceTree = SOURCE_ROOT; };
 		A6ED08B226F4492600782AEA /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
 		A6ED08B526F44A2B00782AEA /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 		A6ED08B726F469BC00782AEA /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		A6A367F226F1DC5D001A628D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6B5D21326F59B46007C35D0 /* SettingsRowView.swift */,
 				A6A367F326F1DC89001A628D /* FruitCardView.swift */,
 				A6FB354E26F1E43A00B0A788 /* StartButtonView.swift */,
 				A6ED08B726F469BC00782AEA /* FruitRowView.swift */,
@@ -208,6 +211,7 @@
 			files = (
 				A6ED08B626F44A2B00782AEA /* FruitData.swift in Sources */,
 				A618FED126F4817000F4F3B2 /* SourceLinkView.swift in Sources */,
+				A6B5D21426F59B46007C35D0 /* SettingsRowView.swift in Sources */,
 				A6A367F426F1DC89001A628D /* FruitCardView.swift in Sources */,
 				A6ED08B826F469BC00782AEA /* FruitRowView.swift in Sources */,
 				A6FB354F26F1E43A00B0A788 /* StartButtonView.swift in Sources */,
